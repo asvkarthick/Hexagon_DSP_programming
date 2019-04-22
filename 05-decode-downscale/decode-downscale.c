@@ -14,11 +14,14 @@ int main()
     bot1_ll = Q6_P_vzxtbh_R(bot1_i);
     bot2_ll = Q6_P_vzxtbh_R(bot2_i);
 
+    printf("Original input values\n");
     printf("Top1 int = %08x\n", top1_i);
     printf("Top2 int = %08x\n", top2_i);
     printf("Bot1 int = %08x\n", bot1_i);
     printf("Bot2 int = %08x\n", bot2_i);
 
+    printf("\n");
+    printf("Zero extend bytes to half words\n");
     printf("Top1 long long = %016llx\n", top1_ll);
     printf("Top2 long long = %016llx\n", top2_ll);
     printf("Bot1 long long = %016llx\n", bot1_ll);
