@@ -37,5 +37,12 @@ int main()
     printf("Top1 long long = %016llx\n", top1_ll);
     printf("Top2 long long = %016llx\n", top2_ll);
 
+    // vector shift to divide each sum by 4, and pack each to 16 bits
+    top1_ll = Q6_R_vasrw_PI(top1_ll, 2) | ((unsigned long long)Q6_R_vasrw_PI(top2_ll, 2) << 32);
+
+    printf("\n");
+    printf("Vector shift to divide each sum by 4 and pack each to 16-bits\n");
+    printf("Top1 long long = %016llx\n", top1_ll);
+
     return 0;
 }
