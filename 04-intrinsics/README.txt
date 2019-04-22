@@ -17,13 +17,19 @@ hexagon-sim INFO: The rev_id used in the simulation is 0x00004060 (v60a_512)
 Val1 = 11111111
 Val2 = 22222222
 Add  = 33333333
-Val1 = ffffffff
-Val2 = ffffffff
+
+Val1 = 7fffffff
+Val2 = 7fffffff
 Add  = fffffffe
 
+Adding using saturation
+Val1 = 7fffffff
+Val2 = 7fffffff
+Add  = 7fffffff
+
 Done!
-	T0: Insns=33581 Packets=16278
+	T0: Insns=56854 Packets=27118
 	T1: Insns=0 Packets=0
 	T2: Insns=0 Packets=0
 	T3: Insns=0 Packets=0
-	Total: Insns=33581 Pcycles=32558
+	Total: Insns=56854 Pcycles=54238
