@@ -44,5 +44,12 @@ int main()
     printf("Vector shift to divide each sum by 4 and pack each to 16-bits\n");
     printf("Top1 long long = %016llx\n", top1_ll);
 
+    // Pack to 8 bits
+    top1_i = Q6_R_vtrunehb_P(top1_ll);
+
+    printf("\n");
+    printf("Pack to 8 bits\n");
+    printf("Top1 int = %08x\n", top1_i);
+
     return 0;
 }
