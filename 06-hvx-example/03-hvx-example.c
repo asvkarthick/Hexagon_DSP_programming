@@ -26,7 +26,7 @@ int main()
     for(i = 0; i < N; i++)
         printf("%4d: %x %x\n", i, a[i], b[i]);
 
-    printf("Simple HVX example\n");
+    printf("Simple HVX example %p\n", b);
 
     return 0;
 }
