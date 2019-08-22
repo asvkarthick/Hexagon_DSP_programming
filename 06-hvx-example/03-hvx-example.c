@@ -6,11 +6,12 @@
 
 #define N 128
 
+unsigned char a[N], b[N] __attribute__ ((aligned(128)));
+
 int main()
 {
     HVX_Vector v1, v2, *vptr;
     HVX_VectorPair v;
-    unsigned char a[N], b[N];
     int i;
 
     v1 = Q6_V_vzero();

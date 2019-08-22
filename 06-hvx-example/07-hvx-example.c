@@ -6,7 +6,7 @@
 
 #define N 128
 
-unsigned char a[N], b[N], c[N];
+unsigned char a[N], b[N], c[N] __attribute__ ((aligned(128)));
 
 int main()
 {
