@@ -157,3 +157,5 @@ Done!
 	T3: Insns=0 Packets=0
 	Total: Insns=505325 Pcycles=460958
 
+
+$ hexagon-clang -mhvx -mv65 -DLOG2VLEN=7 -mhvx-length=128B 07-hvx-example.c -o hvx-example
